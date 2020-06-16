@@ -4,6 +4,50 @@ include 'templates/nav.php';
 <main>
     <div class="slider">
         <div class="slider__wrapper">
+            <div class="carousel" data-flickity='{ "autoPlay": 5000, "wrapAround": true, "pauseAutoPlayOnHover": false }'>
+                <div class="carousel-cell">
+                    <div class="package-header__info">
+                        <img src="images/packages/adventurous.png" alt="adventurous package" class="package-header__img">
+                        <div class="package-header__info-text">
+                            <h3 class="package-header__info-title">Adventurous Package Details</h3>
+                            <ul class="package-header__list">
+                                <li class="package-header__list-item">5 Games</li>
+                                <li class="package-header__list-item">At least 1 adventure game</li>
+                                <li class="package-header__list-item">No duplicates</li>
+                                <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="package-header__info">
+                        <img src="images/packages/adventurous.png" alt="adventurous package" class="package-header__img">
+                        <div class="package-header__info-text">
+                            <h3 class="package-header__info-title">Adventurous Package Details</h3>
+                            <ul class="package-header__list">
+                                <li class="package-header__list-item">5 Games</li>
+                                <li class="package-header__list-item">At least 1 adventure game</li>
+                                <li class="package-header__list-item">No duplicates</li>
+                                <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="package-header__info">
+                        <img src="images/packages/adventurous.png" alt="adventurous package" class="package-header__img">
+                        <div class="package-header__info-text">
+                            <h3 class="package-header__info-title">Adventurous Package Details</h3>
+                            <ul class="package-header__list">
+                                <li class="package-header__list-item">5 Games</li>
+                                <li class="package-header__list-item">At least 1 adventure game</li>
+                                <li class="package-header__list-item">No duplicates</li>
+                                <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="about">
