@@ -4,18 +4,18 @@ include 'templates/nav.php';
 <main>
     <div class="slider">
         <div class="slider__wrapper">
-            <div class="carousel" data-flickity='{ "autoPlay": 5000, "wrapAround": true, "pauseAutoPlayOnHover": false }'>
+            <div class="carousel" data-flickity='{ "autoPlay": 3000, "wrapAround": true, "pauseAutoPlayOnHover": true }'>
                 <div class="carousel-cell">
                     <div class="package-header__info">
-                        <img src="images/packages/adventurous.png" alt="adventurous package" class="package-header__img">
+                        <img src="images/packages/vr.png" alt="adventurous package" class="package-header__img">
                         <div class="package-header__info-text">
-                            <h3 class="package-header__info-title">Adventurous Package Details</h3>
+                            <h3 class="package-header__info-title">VR Crazy Package Details</h3>
                             <ul class="package-header__list">
-                                <li class="package-header__list-item">5 Games</li>
-                                <li class="package-header__list-item">At least 1 adventure game</li>
+                                <li class="package-header__list-item">5 VR Games</li>
                                 <li class="package-header__list-item">No duplicates</li>
-                                <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
+                                <li class="package-header__list-item">Does <strong>ONLY</strong> contain VR games</li>
                             </ul>
+                            <button class="package-header__btn">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -30,20 +30,37 @@ include 'templates/nav.php';
                                 <li class="package-header__list-item">No duplicates</li>
                                 <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
                             </ul>
+                            <a href="product.php?box=adventure" class="package-header__btn">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-cell">
                     <div class="package-header__info">
-                        <img src="images/packages/adventurous.png" alt="adventurous package" class="package-header__img">
+                        <img src="images/packages/action.png" alt="adventurous package" class="package-header__img">
                         <div class="package-header__info-text">
-                            <h3 class="package-header__info-title">Adventurous Package Details</h3>
+                            <h3 class="package-header__info-title">Action Packed Package Details</h3>
                             <ul class="package-header__list">
                                 <li class="package-header__list-item">5 Games</li>
-                                <li class="package-header__list-item">At least 1 adventure game</li>
+                                <li class="package-header__list-item">At least 1 action game</li>
                                 <li class="package-header__list-item">No duplicates</li>
                                 <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
                             </ul>
+                            <button class="package-header__btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="package-header__info">
+                        <img src="images/packages/racing.png" alt="adventurous package" class="package-header__img">
+                        <div class="package-header__info-text">
+                            <h3 class="package-header__info-title">Racing Chasing Package Details</h3>
+                            <ul class="package-header__list">
+                                <li class="package-header__list-item">5 Games</li>
+                                <li class="package-header__list-item">At least 1 race game</li>
+                                <li class="package-header__list-item">No duplicates</li>
+                                <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
+                            </ul>
+                            <button class="package-header__btn">Learn More</button>
                         </div>
                     </div>
                 </div>

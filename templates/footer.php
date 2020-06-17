@@ -34,13 +34,12 @@
         <div class="footer__bottom">
             <ul class="footer__list">
                 <li class="footer__list-item">About</li>
-                <li class="footer__list-item"><a href="#">Who we are</a></li>
-                <li class="footer__list-item"><a href="#">Our mission</a></li>
+                <li class="footer__list-item"><a href="who.php">Who we are</a></li>
+                <li class="footer__list-item"><a href="how.php">How it works</a></li>
             </ul>
             <ul class="footer__list">
                 <li class="footer__list-item">Support</li>
-                <li class="footer__list-item"><a href="#">FAQ</a></li>
-                <li class="footer__list-item"><a href="#">Privacy policy</a></li>
+                <li class="footer__list-item"><a href="privacy_policy.php">Privacy policy</a></li>
                 <li class="footer__list-item"><a href="#">Contact</a></li>
             </ul>
             <div class="footer__social-icons">

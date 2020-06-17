@@ -162,12 +162,16 @@ STYLING HOMEPAGE
 
 .carousel {
     width: 100%;
-    height: 80%;
+    height: 75%;
 }
 
 .carousel-cell {
     width: 80%;
     margin: 0 10%;
+}
+
+.flickity-viewport {
+    height: 100% !important;
 }
 
 .flickity-button {
@@ -464,6 +468,21 @@ STYLING PRODUCTPAGE
     font-weight: bold;
     margin: 10px 0 10px 25px;
     font-size: var(--fnt-sz-m);
+}
+
+.package-header__btn {
+    position: absolute;
+    right: 0;
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-white);
+    font-size: var(--fnt-sz-m);
+    padding: .4em 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: .5em;
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
 .package-header__shopping-cart {
