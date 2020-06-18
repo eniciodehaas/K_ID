@@ -22,6 +22,36 @@
         <p class="register-modal__bottom-text">Already have an account? <a href="#" class="register-modal__sign-in">Sign in</a></p>
     </div>
 </div>
+<div class="shopping-cart-modal" id="shopping-cart-modal">
+    <div class="shopping-cart-modal__background close-modal"></div>
+    <div class="shopping-cart-modal__modal">
+        <div class="shopping-cart__modal-header">
+            <h3 class="shopping-cart__modal-title">Your cart</h3>
+            <p class="shopping-cart__modal-close close-modal">Close</p>
+        </div>
+        <div class="shopping-cart__item">
+            <img src="images/packages/adventurous.png" alt="Adventurous package" class="shopping-cart__item-img">
+            <div class="shopping-cart__item-info">
+                <h4 class="shopping-cart__item-title">Adventurous Package</h4>
+                <h4 class="shopping-cart__price-price"><span class="shopping-cart__price-amount"><sup>&euro;</sup>40.00 </span>eur/month</h4>
+            </div>
+            <img src="images/delete.svg" alt="delete" class="shopping-cart__delete">
+        </div>
+        <div class="shopping-cart__item">
+            <img src="images/packages/rpg.png" alt="RPGuru package" class="shopping-cart__item-img">
+            <div class="shopping-cart__item-info">
+                <h4 class="shopping-cart__item-title">RPGuru Package</h4>
+                <h4 class="shopping-cart__price-price"><span class="shopping-cart__price-amount"><sup>&euro;</sup>35.00 </span>eur/month</h4>
+            </div>
+            <img src="images/delete.svg" alt="delete" class="shopping-cart__delete">
+        </div>
+        <div class="shopping-cart__total">
+            <h3 class="shopping-cart__total-text">Total</h3>
+            <h4 class="shopping-cart__price-price"><span class="shopping-cart__price-amount"><sup>&euro;</sup>75.00 </span>eur/month</h4>
+        </div>
+        <button class="shopping-cart__button">Check out</button>
+    </div>
+</div>
 <footer>
     <div class="footer__wrapper">
         <div class="footer__top">

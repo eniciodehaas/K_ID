@@ -49,7 +49,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="#"><div class="package-header__shopping-cart"></div></a>
+            <a href="product_choice.php"><div class="package-header__shopping-cart"></div></a>
         </div>
     </div>
     <div class="package-info">

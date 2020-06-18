@@ -17,7 +17,7 @@
             <div class="nav__inner">
                 <h3 class="nav__login-btn" id="login-btn">Login</h3>
                 <button class="nav__register-btn" id="register-btn">Register</button>
-                <img src="images/shopping-cart.png" alt="Shopping cart" class="nav__shopping-cart">
+                <img src="images/shopping-cart.png" alt="Shopping cart" class="nav__shopping-cart" id="cart-btn">
             </div>
         </div>
     </nav>
