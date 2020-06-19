@@ -98,7 +98,7 @@
             <ul class="footer__list">
                 <li class="footer__list-item">Support</li>
                 <li class="footer__list-item"><a href="privacy_policy.php">Privacy policy</a></li>
-                <li class="footer__list-item"><a href="return.php">Shipping info</a></li>
+                <li class="footer__list-item"><a href="return.php">Return info</a></li>
                 <li class="footer__list-item"><a style="cursor:pointer" id="contact-btn">Contact</a></li>
             </ul>
             <div class="footer__social-icons">
