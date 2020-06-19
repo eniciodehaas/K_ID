@@ -3,12 +3,15 @@ let menu = document.querySelector('.nav__inner');
 
 hamburger.addEventListener('click', () => {
     menu.classList.toggle('nav__inner--open');
+    hamburger.classList.toggle('is-active');
 });
 
 let loginBtn = document.getElementById('login-btn');
 let loginModal = document.getElementById('login-modal');
 let registerBtn = document.getElementById('register-btn');
 let registerModal = document.getElementById('register-modal');
+let contactBtn = document.getElementById('contact-btn');
+let contactModal = document.getElementById('contact-modal');
 let editBtn = document.getElementById('edit-btn');
 let editModal = document.getElementById('edit-modal');
 let cartBtn = document.getElementById('cart-btn');
@@ -18,12 +21,18 @@ loginBtn.addEventListener('click', ()=> {
     loginModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 });
-editBtn.addEventListener('click', ()=> {
-    editModal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-});
+if (editBtn) {
+    editBtn.addEventListener('click', ()=> {
+        editModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+}
 registerBtn.addEventListener('click', ()=> {
     registerModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+});
+contactBtn.addEventListener('click', ()=> {
+    contactModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 });
 cartBtn.addEventListener('click', ()=> {
@@ -33,6 +42,7 @@ cartBtn.addEventListener('click', ()=> {
 for (let i = 0; i < closeModal.length; i++) {
     closeModal[i].addEventListener('click', ()=> {
         loginModal.style.display = 'none';
+        contactModal.style.display = 'none';
         registerModal.style.display = 'none';
         editModal.style.display = 'none';
         cartModal.style.display = 'none';

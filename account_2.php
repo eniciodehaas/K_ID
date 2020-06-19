@@ -7,7 +7,8 @@ include 'templates/nav.php';
         <div class="subscriptions__wrapper">
             <h3 class="subscriptions__title">Your subscriptions<a href="home.php" class="how__back">Back to packages</a></h3>
             <div style="display:flex; margin-top:40px">
-            <div class="more-packages__card" style="margin-right:80px">
+            <a href="account_3.php" style="margin-right:80px; text-decoration: none; color:#000" >
+            <div class="more-packages__card">
                     <img src="images/packages/rpg.png" alt="RPG" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
                         <h3 class="more-packages__card-title">RPGuru</h3>
@@ -15,6 +16,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>35.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="account_3.php" style="text-decoration:none; color:#000">
             <div class="top-picks__card">
                     <img src="images/packages/adventurous.png" alt="adventure" class="top-picks__card-img">
                     <div class="top-picks__card-inner">
@@ -23,6 +26,7 @@ include 'templates/nav.php';
                         <h4 class="top-picks__card-price"><span class="top-picks__card-amount"><sup>&euro;</sup>40.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
 </div>
         </div>
     </div>

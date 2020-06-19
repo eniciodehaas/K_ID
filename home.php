@@ -218,8 +218,8 @@ include 'templates/nav.php';
                 </div>
                 </a>
             </div>
-            <h2 class="more-packages__bottom-title">Looking for more?</h2>
-            <button class="more-packages__bottom-button">Shop all packages</button>
+            <h2 class="more-packages__bottom-title">Need help?</h2>
+            <a class="more-packages__bottom-button" href="how.php">How it works</a>
         </div>
     </div>
 </main>

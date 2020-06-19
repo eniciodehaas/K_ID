@@ -7,7 +7,7 @@ include 'templates/nav.php';
         <div class="subscriptions__wrapper">
             <h3 class="subscriptions__title">Your subscriptions<a href="home.php" class="how__back">Back to packages</a></h3>
             <p class="subscriptions__text">When you purchase a subscription package,<br> you will see your order here!</p>
-            <button class="subscriptions__button">Add Subscription</button>
+            <a href="account_2.php" class="subscriptions__button">Add Subscription</a>
         </div>
     </div>
     <div class="profile">

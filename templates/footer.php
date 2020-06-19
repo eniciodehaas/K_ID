@@ -2,10 +2,11 @@
     <div class="login-modal__background close-modal"></div>
     <div class="login-modal__modal">
         <img src="images/GameWave-Logo.jpg" alt="logo" class="login-modal__modal-logo">
+        <div class="close-modal cross">Close</div>
         <p class="login-modal__modal-text">Welcome back! Please sign in to manage your account!</p>
         <input type="email" class="login-modal__modal-input" placeholder="Email Adress">
         <input type="password" class="login-modal__modal-input" placeholder="Password">
-        <button type="submit" class="login-modal__modal-button">Sign in</button>
+        <a href="account.php" type="submit" class="login-modal__modal-button">Sign in</a>
         <a href="forgot-pass.php" class="login-modal__forgot-password">Forgot Password</a>
     </div>
 </div>
@@ -13,6 +14,7 @@
     <div class="register-modal__background close-modal"></div>
     <div class="register-modal__modal">
         <img src="images/GameWave-Logo.jpg" alt="logo" class="register-modal__modal-logo">
+        <div class="close-modal cross">Close</div>
         <p class="register-modal__modal-text">Make an account and subscribe to one of our packages!</p>
         <input type="email" class="register-modal__modal-input" placeholder="Email Adress">
         <input type="password" class="register-modal__modal-input" placeholder="Password">
@@ -26,11 +28,26 @@
     <div class="login-modal__background close-modal"></div>
     <div class="login-modal__modal">
         <img src="images/GameWave-Logo.jpg" alt="logo" class="login-modal__modal-logo">
+        <div class="close-modal cross">Close</div>
         <p class="login-modal__modal-text">Edit your profile</p>
         <input type="email" class="login-modal__modal-input" placeholder="Email Adress" value="johndoe@gmail.com">
         <input type="text" class="login-modal__modal-input" placeholder="First name" value="John">
         <input type="text" class="login-modal__modal-input" placeholder="Last name" value="Doe">
         <button type="submit" class="login-modal__modal-button">Update</button>
+    </div>
+</div>
+<div class="login-modal" id="contact-modal">
+    <div class="login-modal__background close-modal"></div>
+    <div class="login-modal__modal">
+        <img src="images/GameWave-Logo.jpg" alt="logo" class="login-modal__modal-logo">
+        <div class="close-modal cross">Close</div>
+        <p class="login-modal__modal-text">Fill In the form below to contact us!</p>
+        <input type="email" class="login-modal__modal-input" placeholder="Email Adress">
+        <input type="text" class="login-modal__modal-input" placeholder="First name">
+        <input type="text" class="login-modal__modal-input" placeholder="Last name">
+        <input type="text" class="login-modal__modal-input" placeholder="Subject">
+        <textarea class="login-modal__modal-input textarea" placeholder="Description"></textarea>
+        <button type="submit" class="login-modal__modal-button close-modal">Submit</button>
     </div>
 </div>
 <div class="shopping-cart-modal" id="shopping-cart-modal">
@@ -81,8 +98,8 @@
             <ul class="footer__list">
                 <li class="footer__list-item">Support</li>
                 <li class="footer__list-item"><a href="privacy_policy.php">Privacy policy</a></li>
-                <li class="footer__list-item"><a href="shipping_info.php">Shipping info</a></li>
-                <li class="footer__list-item"><a href="#">Contact</a></li>
+                <li class="footer__list-item"><a href="return.php">Shipping info</a></li>
+                <li class="footer__list-item"><a style="cursor:pointer" id="contact-btn">Contact</a></li>
             </ul>
             <div class="footer__social-icons">
                 <a href="#" class="footer__social-icon footer__social-icon--youtube"><i class="fab fa-youtube"></i></a>

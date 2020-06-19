@@ -21,6 +21,17 @@ main {
     background-color: var(--clr-white);
 }
 
+button,
+input,
+textarea {
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--clr-dark-blue);
+}
+
 :root {
     --clr-main: #4D6CB8;
     --clr-white: #FFFFFF;
@@ -79,7 +90,6 @@ STYLING NAV
     margin: 5px;
     display: none;
     float: right;
-    background-color: var(--clr-light-blue);
 }
 
 .nav__inner {
@@ -303,6 +313,7 @@ STYLING HOMEPAGE
     cursor: pointer;
     border-radius: .5em;
     border: none;
+    text-decoration: none;
 }
 
 .top-picks__cards-wrapper,
@@ -578,6 +589,7 @@ STYLING ACCOUNT PAGE
 .subscriptions__wrapper,
 .profile__wrapper {
     align-items: flex-start !important;
+    margin: 0 auto;
 }
 
 .subscriptions__title {
@@ -600,6 +612,11 @@ STYLING ACCOUNT PAGE
     max-width: 400px;
 }
 
+.subscriptions__button.cancel {
+    display: block;
+    margin: 10px auto 80px auto !important;
+}
+
 .profile__div {
     background-color: var(--clr-main);
     border-radius: 10px;
@@ -609,6 +626,17 @@ STYLING ACCOUNT PAGE
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
+}
+
+.profile__div.step {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.profile__div.step .how__step {
+    margin-bottom: 20px;
 }
 
 .profile__title {
@@ -835,6 +863,7 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 .login-modal,
 .register-modal,
 .shopping-cart-modal {
+    overflow: scroll;
     display: none;
 }
 
@@ -874,6 +903,16 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
     height: 650px;
 }
 
+#contact-modal .login-modal__modal {
+    height: 100%;
+    max-height: 650px;
+    overflow: scroll;
+}
+
+#contact-modal .login-modal__modal-input {
+    margin: 10px 0;
+}
+
 .shopping-cart-modal__modal {
     height: initial;
     width: 100%;
@@ -890,6 +929,14 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 .register-modal__modal-logo {
     height: 100px;
     width: 100px;
+}
+
+.close-modal.cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: var(--fnt-sz-s);
+    color: var(--clr-grey);
 }
 
 .login-modal__modal-text,
@@ -941,6 +988,11 @@ input[type="date"],
     padding: .5em .75em;
     border-color: var(--clr-orange);
     cursor: pointer;
+}
+
+.login-modal__modal-button {
+    text-decoration: none;
+    text-align: center;
 }
 
 .login-modal__forgot-password,
@@ -1453,6 +1505,25 @@ PRODUCT CHECKOUT PAGES
     width: 100%;
 }
 
+.overview__step,
+.overview__step-text {
+    background-color: var(--clr-main);
+    color: white;
+    padding: 10px;
+}
+
+.overview__step {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0;
+}
+
+.overview__step-text {
+    padding-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .overview .top-picks__card {
     margin: 0 40px 0 0;
     cursor: default;
@@ -1469,7 +1540,6 @@ PRODUCT CHECKOUT PAGES
 .overview__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-size: var(--fnt-sz-m);
 }
 
@@ -1639,7 +1709,7 @@ PRODUCT CHECKOUT PAGES
 
 .billing-details__payment-method-title {
     margin: 0 auto;
-    font-size: var(--fnt-sz-m);
+    font-size: calc(var(--fnt-sz-m) - 5px);
     font-weight: 300;
 }
 
@@ -1752,6 +1822,23 @@ HOW IT WORKS & WHO WE ARE PAGES
     font-size: var(--fnt-sz-s);
 }
 
+.return .who__wrapper {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+}
+
+.return .who__box {
+    width: initial;
+}
+
+textarea.login-modal__modal-input.textarea {
+    min-height: 100px;
+}
+
+.close-modal.cross {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1500px) {
     .more-packages__card {
         margin-right: 0;
@@ -1784,6 +1871,10 @@ HOW IT WORKS & WHO WE ARE PAGES
         font-size: var(--fnt-sz-s);
     }
 
+    .subscriptions__title {
+        font-size: var(--fnt-sz-m);
+    }
+
     .how__wrapper,
     .who__wrapper {
         grid-template-columns: 1fr;
@@ -1809,6 +1900,10 @@ HOW IT WORKS & WHO WE ARE PAGES
     .footer__form-button {
         font-size: var(--fnt-sz-s);
     }
+    .footer__form-button {
+        border: 3px solid var(--clr-orange);
+        box-sizing: content-box;
+    }
     .footer__bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1821,6 +1916,14 @@ HOW IT WORKS & WHO WE ARE PAGES
         width: 80%;
         margin: 0 auto;
         margin-top: 40px;
+    }
+
+    .billing-details__payment-methods {
+        flex-direction: column;
+    }
+
+    .billing-details__payment-method {
+        width: 100%;
     }
 }
 
@@ -1870,6 +1973,25 @@ HOW IT WORKS & WHO WE ARE PAGES
 
     .nav__packages-dropdown::after {
         content: '';
+    }
+
+    .slider {
+        height: 650px;
+    }
+
+    .slider .package-header__img {
+        height: 200px;
+        width: 150px;
+        margin-right: 0;
+    }
+
+    .slider .package-header__list-item {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .slider .package-header__btn {
+        font-size: var(--fnt-sz-s);
     }
 
     .about__wrapper {
@@ -1937,11 +2059,130 @@ HOW IT WORKS & WHO WE ARE PAGES
         text-align: center;
         margin-bottom: 20px;
     }
+
+    .subscriptions__button.cancel {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .pick-size__title,
+    .pick-extra__title,
+    .pick-duration__title,
+    .add-to-cart__title {
+        font-size: calc(var(--fnt-sz-m) - 2px );
+    }
+
+    .pick-size__flex,
+    .pick-extra__flex,
+    .pick-duration__flex {
+        flex-direction: column;
+    }
+
+    .pick-duration__flex {
+        margin-bottom: 20px;
+    }
+
+    .pick-size__flex label,
+    .pick-extra__flex label,
+    .pick-duration__flex label {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .pick-size__price,
+    .pick-extra__price {
+        font-size: var(--fnt-sz-m);
+    }
+
+    .pick-size__price sup,
+    .pick-extra__price sup {
+        font-size: var(--fnt-sz-s);
+        vertical-align: 30%;
+    }
+
+    .pick-extra__size {
+        width: 100%;
+    }
+
+    .add-to-cart__info {
+        margin: 0 0 20px 0;
+    }
+
+    .overview__grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .overview .top-picks__card {
+        margin: 0 auto 20px auto;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .overview__price,
+    .overview__total,
+    .overview__price-amount {
+        text-align: center;
+    }
+
+    .overview__button,
+    .billing-details__button {
+        width: 90%;
+        max-width: 350px;
+        justify-self: center;
+    }
+
+    .billing-details__button {
+        min-width: 0;
+        margin-left: 0;
+    }
+
+    .checkout__name,
+    .checkout__city-wrapper {
+        flex-direction: column;
+    }
+
+    .custom-select-wrapper,
+    .checkout__first-name,
+    .checkout__last-name,
+    .checkout__city,
+    .checkout__postal-code {
+        width: 100% !important;
+    }
+
+    .credit-details__bottom, 
+    .credit-details__name {
+        flex-direction: column;
+    }
+
+    .credit-details__first-name,
+    .credit-details__last-name,
+    .credit-details__bottom input {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
     :root {
         --pdng-main: 20px;
+    }
+
+    .carousel-cell {
+        margin: auto 10% !important;
+        width: 80%;
+    }
+
+    .slider {
+        height: 670px;
+    }
+
+    .slider .package-header__info-title {
+        font-size: var(--fnt-sz-s);
+        text-align: center;
+    }
+
+    .slider .package-header__list-item {
+        font-weight: 400;
     }
 
     .about__title {
@@ -1960,6 +2201,19 @@ HOW IT WORKS & WHO WE ARE PAGES
     .more-packages__bottom-button {
         margin: 0;
         font-size: var(--fnt-sz-s);
+    }
+
+    .profile__div.step {
+        width: 90%;
+    }
+
+    .subscriptions__title {
+        align-items: flex-start;
+        font-size: var(--fnt-sz-s);
+    }
+
+    .how__back {
+        font-size: var(--fnt-sz-xs);
     }
 
     .footer__form {
@@ -1987,5 +2241,56 @@ HOW IT WORKS & WHO WE ARE PAGES
 
     .how__box {
         width: 100%;
+    }
+
+    .shopping-cart__total-text {
+        font-size: var(--fnt-sz-s);
+    }
+
+    .register-modal__modal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-modal__modal {
+        width: 100%;
+    }
+
+    .pick-extra__size-symbol {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        font-size: var(--fnt-sz-s);
+    }
+
+    .checkout__button {
+        margin: 10px 0;
+        width: 90%;
+        max-width: 480px;
+    }
+
+    .billing-details__payment-method-title {
+        font-size: var(--fnt-sz-s);
+    }
+
+    .billing-details__payment-method {
+        padding: 10px 20px;
+    }
+
+    .who__box {
+        width: 100%;
+    }
+
+    .who__box-title {
+        font-size: var(--fnt-sz-m);
+    }
+
+    .who__box-text {
+        font-size: var(--fnt-sz-s);
+    }
+
+    .how__button {
+        width: 70%;
     }
 }

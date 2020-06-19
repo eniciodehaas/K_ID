@@ -57,7 +57,7 @@ delivered every month on the same date </p>
             </div>
             <h3 class="paypal-details" style="display:none;">You have selected PayPal as your payment method.</h3>
             <h3 class="ideal-details" style="display:none;">You have selected IDeal as your payment method.</h3>
-            <a href="" class="billing-details__button" style="display:none">Subscribe</a>
+            <a href="confirmation.php" class="billing-details__button" style="display:none">Subscribe</a>
         </div>
         </div>
     </div>
