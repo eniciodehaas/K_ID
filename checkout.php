@@ -32,7 +32,7 @@ include 'templates/nav.php';
                     <input type="text" placeholder="City" class="checkout__city">
                     <input type="text" placeholder="Postal Code" class="checkout__postal-code">
                 </div>
-                <a href="" class="checkout__button">Continue</a>
+                <a href="billing.php" class="checkout__button">Continue</a>
             </form>
         </div>
     </div>

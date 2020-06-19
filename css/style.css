@@ -197,7 +197,12 @@ STYLING HOMEPAGE
 }
 
 .about,
-.checkout {
+.overview,
+.checkout,
+.address-data,
+.billing-details,
+.how,
+.privacy-policy {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,7 +258,14 @@ STYLING HOMEPAGE
 
 .top-picks__wrapper,
 .more-packages__wrapper,
-.checkout__wrapper {
+.overview__wrapper,
+.checkout__wrapper,
+.address-data__wrapper,
+.how__wrapper,
+.how__wrapper--link,
+.who__wrapper,
+.billing-details__wrapper,
+.privacy-policy__wrapper {
     width: 100%;
     max-width: 1680px;
     display: flex;
@@ -558,6 +570,10 @@ STYLING PRODUCTPAGE
 }
 
 /************************************
+STYLING ACCOUNT PAGE
+************************************/
+
+/************************************
 STYLING FOOTER
 ************************************/
 
@@ -828,7 +844,11 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 .register-modal__modal-button,
 .shopping-cart__button,
 .add-to-cart__button,
-.checkout__button {
+input[type="date"],
+.overview__button,
+.checkout__button,
+.billing-details__button,
+.how__button {
     width: 90%;
     height: var(--fnt-sz-m);
     font-size: var(--fnt-sz-s);
@@ -843,7 +863,10 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 .register-modal__modal-button,
 .shopping-cart__button,
 .add-to-cart__button,
-.checkout__button {
+.overview__button,
+.checkout__button,
+.billing-details__button,
+.how__button {
     background-color: var(--clr-orange);
     color: var(--clr-white);
     padding: .5em .75em;
@@ -852,7 +875,9 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 }
 
 .login-modal__forgot-password,
-.register-modal__sign-in {
+.register-modal__sign-in,
+.address-data__edit,
+.how__back {
     font-size: var(--fnt-sz-s);
     color: #000;
     text-decoration: none;
@@ -861,7 +886,9 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 }
 
 .login-modal__forgot-password::after,
-.register-modal__sign-in::after {
+.register-modal__sign-in::after,
+.address-data__edit:after,
+.how__back:after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -874,7 +901,9 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 }
 
 .login-modal__forgot-password:hover::after,
-.register-modal__sign-in:hover::after {
+.register-modal__sign-in:hover::after,
+.address-data__edit:hover::after,
+.how__back:hover::after {
     transform: scaleY(2.5);
 }
 
@@ -956,7 +985,10 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 }
 
 .shopping-cart__button,
-.checkout__button {
+.overview__button,
+.checkout__button,
+.billing-details__button,
+.how__button {
     width: 50%;
     margin: 20px;
     text-decoration: none;
@@ -1328,18 +1360,79 @@ PRODUCT CHOICE PAGE
 
 
 /************************************
-PRODUCT CHECKOUT PAGE
+PRODUCT CHECKOUT PAGES
 ************************************/
-.checkout__wrapper {
+.overview {
+    flex-direction: column;
+}
+
+.overview__title {
+    width: 100%;
+    text-align: left;
+}
+
+.overview__grid {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+}
+
+.overview .top-picks__card {
+    margin: 0 40px 0 0;
+    cursor: default;
+}
+
+.overview .top-picks__card:hover {
+    transform: scale(1);
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, .1);
+}
+
+.overview__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: var(--fnt-sz-m);
+}
+
+.overview__price {
+    font-size: var(--fnt-sz-m);
+}
+
+.overview__price-amount {
+    font-weight: 300;
+}
+
+.overview__price sup {
+    vertical-align: 50%;
+    font-size: var(--fnt-sz-xs);
+}
+
+.overview__button {
+    justify-self: flex-end;
+}
+
+.checkout__wrapper,
+.address-data__wrapper,
+.billing-details__wrapper {
     align-items: flex-start;
 }
 
-.checkout__title {
+.address-data__wrapper {
+    padding: 0 var(--pdng-main);
+}
+
+.checkout__title,
+.address-data__title,
+.overview__title {
     margin: 20px 0 5px 0;
     font-size: var(--fnt-sz-l);
 }
 
-.checkout__form-wrapper {
+.checkout__form-wrapper,
+.address-data__div,
+.billing-details__wrapper-div,
+.overview__wrapper-div {
     width: 100%;
     border: 1px solid var(--clr-grey);
     border-radius: 10px;
@@ -1349,7 +1442,15 @@ PRODUCT CHECKOUT PAGE
     padding: 20px;
 }
 
-.checkout__form-title {
+.billing-details__wrapper-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__form-title,
+.address-data__div-title,
+.billing-details__title,
+.overview__div-title {
     background-color: var(--clr-main);
     margin: -21px;
     padding: 10px 21px;
@@ -1366,7 +1467,9 @@ PRODUCT CHECKOUT PAGE
 }
 
 .checkout__name,
-.checkout__city-wrapper {
+.checkout__city-wrapper,
+.credit-details__name,
+.credit-details__bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1375,11 +1478,18 @@ PRODUCT CHECKOUT PAGE
 .checkout__first-name,
 .checkout__last-name,
 .checkout__city,
-.checkout__postal-code {
+.checkout__postal-code,
+.credit-details__first-name,
+.credit-details__last-name {
     width: 48%;
 }
 
-.checkout input {
+.credit-details__bottom input {
+    width: 32%;
+}
+
+.checkout input,
+.credit-details input {
     box-sizing: border-box;
     padding: 12px 32px;
     border: 1px solid var(--clr-grey);
@@ -1389,14 +1499,178 @@ PRODUCT CHECKOUT PAGE
     outline: none;
 }
 
-.checkout input:focus {
+.checkout input:focus,
+.credit-details input:focus {
     border-color: var(--clr-dark-blue);
 }
 
-.checkout__button {
+.checkout__button,
+.billing-details__button {
     max-width: 300px;
     align-self: flex-end;
     margin-right: 0;
+}
+
+.address-data__div:first-of-type {
+    margin-bottom: 0;
+}
+
+.address-data__text:first-of-type {
+    margin: 10px 0;
+}
+
+.address-data__div-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-data__edit {
+    color: var(--clr-white);
+    margin-bottom: 0;
+}
+
+.address-data__text {
+    font-size: var(--fnt-sz-s);
+    line-height: 28px;
+}
+
+.billing-details__payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.billing-details__payment-method {
+    box-sizing: border-box;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 10px 30px;
+    border: 2px solid var(--clr-grey);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.billing-details__payment-method-img {
+    height: 100%;
+}
+
+.billing-details__payment-method-title {
+    margin: 0 auto;
+    font-size: var(--fnt-sz-m);
+    font-weight: 300;
+}
+
+.credit-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-details__cart-number {
+    width: 100%;
+}
+
+.paypal-details,
+.ideal-details {
+    font-size: var(--fnt-sz-m);
+    font-weight: 300;
+}
+
+input[type="date"] {
+    outline: none;
+    max-width: 300px;
+}
+
+input[type="date"]:focus {
+    border-color: var(--clr-dark-blue);
+}
+
+/************************************
+HOW IT WORKS & WHO WE ARE PAGES
+************************************/
+.how,
+.privacy-policy {
+    flex-direction: column;
+}
+
+.how__title,
+.who__title,
+.privacy-policy__title {
+    width: 100%;
+    text-align: center;
+    font-size: var(--fnt-sz-xl);
+    color: var(--clr-white);
+    padding: 1.2em 0;
+    background-color: var(--clr-main);
+}
+
+.how__wrapper--link {
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+.how__wrapper,
+.who__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    margin: 0 auto;
+}
+
+.who__wrapper {
+    padding: 100px var(--pdng-main);
+}
+
+.how__box,
+.who__box {
+    background-color: var(--clr-main);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .3);
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.who__box {
+    height: 100%;
+}
+
+.how__step,
+.who__box-title {
+    text-align: center;
+    color: var(--clr-white);
+    font-size: var(--fnt-sz-l);
+    font-weight: 600;
+}
+
+.how__text,
+.who__box-text {
+    color: var(--clr-white);
+    font-size: var(--fnt-sz-m);
+    font-weight: 300;
+    margin: auto 0;
+}
+
+.how__button {
+    max-width: 400px;
+    margin: 60px auto;
+}
+
+.who__box-text {
+    margin-top: 20px;
+}
+
+.privacy-policy__wrapper p {
+    font-size: var(--fnt-sz-s);
 }
 
 @media screen and (max-width: 1500px) {
@@ -1429,6 +1703,12 @@ PRODUCT CHECKOUT PAGE
 
     .package-header__list-item {
         font-size: var(--fnt-sz-s);
+    }
+
+    .how__wrapper,
+    .who__wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
     }
 }
 
@@ -1624,5 +1904,9 @@ PRODUCT CHECKOUT PAGE
     }
     .footer__social-icon {
         margin: auto;
+    }
+
+    .how__box {
+        width: 100%;
     }
 }

@@ -49,7 +49,7 @@
             <h3 class="shopping-cart__total-text">Total</h3>
             <h4 class="shopping-cart__price-price"><span class="shopping-cart__price-amount"><sup>&euro;</sup>75.00 </span>eur/month</h4>
         </div>
-        <a class="shopping-cart__button" href="checkout.php">Check out</a>
+        <a class="shopping-cart__button" href="overview.php">Check out</a>
     </div>
 </div>
 <footer>
@@ -70,6 +70,7 @@
             <ul class="footer__list">
                 <li class="footer__list-item">Support</li>
                 <li class="footer__list-item"><a href="privacy_policy.php">Privacy policy</a></li>
+                <li class="footer__list-item"><a href="shipping_info.php">Shipping info</a></li>
                 <li class="footer__list-item"><a href="#">Contact</a></li>
             </ul>
             <div class="footer__social-icons">

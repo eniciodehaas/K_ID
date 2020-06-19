@@ -29,10 +29,10 @@
 .custom-options {
     position: absolute;
     display: block;
-    top: 100%;
+    top: calc(100% + 1px);
     left: 0;
     right: 0;
-    border: 2px solid #394a6d;
+    border: 1px solid var(--clr-grey);
     border-top: 0;
     background: #fff;
     transition: all 0.5s;
@@ -40,6 +40,15 @@
     visibility: hidden;
     pointer-events: none;
     z-index: 2;
+    border-radius: 10px;
+}
+.custom-option:first-of-type {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.custom-option:last-of-type {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .custom-select.open .custom-options {
     opacity: 1;
@@ -59,11 +68,11 @@
 }
 .custom-option:hover {
     cursor: pointer;
-    background-color: #b2b2b2;
+    background-color: var(--clr-light-blue);
 }
 .custom-option.selected {
     color: #ffffff;
-    background-color: #305c91;
+    background-color: var(--clr-main);
 }
 
 .arrow {
