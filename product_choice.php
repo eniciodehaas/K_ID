@@ -143,7 +143,7 @@ collectibles with your order.</p>
             </div>
             <div class="pick-extra__info">
                 <h3 class="pick-extra__info-title">Figurines</h3>
-                <p class="pick-extra__info-text">If you select <b>figurines</b> we will figurines, plushies and other
+                <p class="pick-extra__info-text">If you select <b>figurines</b> we will ship figurines, plushies and other
 collectibles with your order.</p>
             </div>
         </div>
@@ -207,7 +207,7 @@ goodie bag.</p>
                 <p class="add-to-cart__info-text">Yes that is right! Just click the button below and add your
 awesome game package to your cart!</p>
         </div>
-        <button class="add-to-cart__button">Add to cart</button>
+        <button class="add-to-cart__button" id="add-to-cart-btn">Add to cart</button>
     </div>
 </main>
 <?php 

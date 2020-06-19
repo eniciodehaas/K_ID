@@ -25,7 +25,8 @@ main {
     --clr-main: #4D6CB8;
     --clr-white: #FFFFFF;
     --clr-light-blue: #D6D9EE;
-    --clr-dark-blue: #FFA700;
+    --clr-dark-blue: #202E50;
+    --clr-orange: #FFA700;
     --clr-invalid-red: #CB6B6B;
     --clr-grey: #8B8686;
     --fnt-sz-xxl: 60px;
@@ -128,7 +129,7 @@ STYLING NAV
 .nav__register-btn {
     font-size: var(--fnt-sz-s);
     font-weight: bold;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     color: var(--clr-white);
     border: none;
     border-radius: .5em;
@@ -195,7 +196,8 @@ STYLING HOMEPAGE
     background-color: #202E50 !important;
 }
 
-.about {
+.about,
+.checkout {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +252,8 @@ STYLING HOMEPAGE
 }
 
 .top-picks__wrapper,
-.more-packages__wrapper {
+.more-packages__wrapper,
+.checkout__wrapper {
     width: 100%;
     max-width: 1680px;
     display: flex;
@@ -280,7 +283,7 @@ STYLING HOMEPAGE
 }
 
 .more-packages__bottom-button {
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     padding: .4em 1em;
     font-weight: bold;
     cursor: pointer;
@@ -401,7 +404,7 @@ STYLING PRODUCTPAGE
     border: 3px solid var(--clr-invalid-red);
     border-radius: 1em;
     color: var(--clr-white);
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     height: 150px;
     margin: 0 auto;
     margin-top: 200px;
@@ -485,7 +488,7 @@ STYLING PRODUCTPAGE
 .package-header__btn {
     position: absolute;
     right: 0;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     color: var(--clr-white);
     font-size: var(--fnt-sz-m);
     padding: .4em 1em;
@@ -503,7 +506,7 @@ STYLING PRODUCTPAGE
     background-position: center;
     background-size: 60px 60px;
     background-repeat: no-repeat;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     height: 60px;
     width: 60px;
     padding: 25px;
@@ -628,6 +631,13 @@ footer {
     border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    outline: none;
+    border: 3px solid var(--clr-white);
+}
+
+.footer__form-input:focus,
+.forgot-pass__form-input:focus {
+    border-color: var(--clr-dark-blue) !important;
 }
 
 .footer__form-input::placeholder,
@@ -645,7 +655,7 @@ footer {
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     color: var(--clr-white);
     font-weight: 600;
     cursor: pointer;
@@ -683,7 +693,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     transform: scaleY(0);
     bottom: -2px;
     left: 0;
@@ -725,7 +735,7 @@ footer {
 }
 
 .footer__social-icon:hover {
-    /* background-color: var(--clr-dark-blue); */
+    /* background-color: var(--clr-orange); */
 }
 
 .footer__social-icon--facebook {
@@ -817,7 +827,8 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 .register-modal__modal-input,
 .register-modal__modal-button,
 .shopping-cart__button,
-.add-to-cart__button {
+.add-to-cart__button,
+.checkout__button {
     width: 90%;
     height: var(--fnt-sz-m);
     font-size: var(--fnt-sz-s);
@@ -831,11 +842,12 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
 .login-modal__modal-button,
 .register-modal__modal-button,
 .shopping-cart__button,
-.add-to-cart__button {
-    background-color: var(--clr-dark-blue);
+.add-to-cart__button,
+.checkout__button {
+    background-color: var(--clr-orange);
     color: var(--clr-white);
     padding: .5em .75em;
-    border-color: var(--clr-dark-blue);
+    border-color: var(--clr-orange);
     cursor: pointer;
 }
 
@@ -856,7 +868,7 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-orange);
     transition: transform 300ms ease;
     transform-origin: top;
 }
@@ -943,16 +955,20 @@ STYLING MODAL LOGIN, REGISTER AND SHOPPING CART WINDOWS
     font-weight: 600;
 }
 
-.shopping-cart__button {
+.shopping-cart__button,
+.checkout__button {
     width: 50%;
     margin: 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 /************************************
 FORGOT PASSWORD PAGE
 ************************************/
 
-.forgot-pass__line {
+.forgot-pass__line,
+.checkout__line {
     height: 3px;
     width: 100%;
     background-color: var(--clr-main);
@@ -978,7 +994,7 @@ FORGOT PASSWORD PAGE
 
 
 /************************************
-PRODUCT CHOICE PASSWORD PAGE
+PRODUCT CHOICE PAGE
 ************************************/
 .pick-size,
 .pick-extra,
@@ -1093,6 +1109,10 @@ PRODUCT CHOICE PASSWORD PAGE
     margin: 10px 0 20px 0;
 }
 
+.pick-extra__card .pick-extra__title:after {
+    width: 0;
+}
+
 .pick-size__check,
 .pick-extra__check,
 .pick-duration__check {
@@ -1116,8 +1136,8 @@ PRODUCT CHOICE PASSWORD PAGE
     width: 26px;
     height: 18px;
     transform: rotate(-45deg);
-    border-bottom: 7px solid var(--clr-dark-blue);
-    border-left: 7px solid var(--clr-dark-blue);
+    border-bottom: 7px solid var(--clr-orange);
+    border-left: 7px solid var(--clr-orange);
     position: absolute;
     bottom: 12px;
     left: 2px;
@@ -1306,6 +1326,78 @@ PRODUCT CHOICE PASSWORD PAGE
     max-width: 300px;
 }
 
+
+/************************************
+PRODUCT CHECKOUT PAGE
+************************************/
+.checkout__wrapper {
+    align-items: flex-start;
+}
+
+.checkout__title {
+    margin: 20px 0 5px 0;
+    font-size: var(--fnt-sz-l);
+}
+
+.checkout__form-wrapper {
+    width: 100%;
+    border: 1px solid var(--clr-grey);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, .2);
+    margin: 40px 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.checkout__form-title {
+    background-color: var(--clr-main);
+    margin: -21px;
+    padding: 10px 21px;
+    margin-bottom: 20px;
+    font-size: var(--fnt-sz-m);
+    color: var(--clr-white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.checkout__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__name,
+.checkout__city-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__first-name,
+.checkout__last-name,
+.checkout__city,
+.checkout__postal-code {
+    width: 48%;
+}
+
+.checkout input {
+    box-sizing: border-box;
+    padding: 12px 32px;
+    border: 1px solid var(--clr-grey);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: var(--fnt-sz-s);
+    outline: none;
+}
+
+.checkout input:focus {
+    border-color: var(--clr-dark-blue);
+}
+
+.checkout__button {
+    max-width: 300px;
+    align-self: flex-end;
+    margin-right: 0;
+}
 
 @media screen and (max-width: 1500px) {
     .more-packages__card {

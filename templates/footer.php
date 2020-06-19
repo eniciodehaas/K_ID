@@ -49,16 +49,16 @@
             <h3 class="shopping-cart__total-text">Total</h3>
             <h4 class="shopping-cart__price-price"><span class="shopping-cart__price-amount"><sup>&euro;</sup>75.00 </span>eur/month</h4>
         </div>
-        <button class="shopping-cart__button">Check out</button>
+        <a class="shopping-cart__button" href="checkout.php">Check out</a>
     </div>
 </div>
 <footer>
     <div class="footer__wrapper">
         <div class="footer__top">
             <div class="footer__logo"></div>
-            <form action="#" class="footer__form">
+            <form class="footer__form">
                 <input type="email" name="email" class="footer__form-input" placeholder="Email Adress">
-                <button type="submit" class="footer__form-button">Join</button>
+                <button type="button" class="footer__form-button">Join</button>
             </form>
         </div>
         <div class="footer__bottom">

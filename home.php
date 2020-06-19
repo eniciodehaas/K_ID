@@ -15,7 +15,7 @@ include 'templates/nav.php';
                                 <li class="package-header__list-item">No duplicates</li>
                                 <li class="package-header__list-item">Does <strong>ONLY</strong> contain VR games</li>
                             </ul>
-                            <button class="package-header__btn">Learn More</button>
+                            <a class="package-header__btn" href="product.php?box=adventure">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ include 'templates/nav.php';
                                 <li class="package-header__list-item">No duplicates</li>
                                 <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
                             </ul>
-                            <button class="package-header__btn">Learn More</button>
+                            <a class="package-header__btn" href="product.php?box=adventure">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ include 'templates/nav.php';
                                 <li class="package-header__list-item">No duplicates</li>
                                 <li class="package-header__list-item">Does <strong>NOT</strong> contain VR games</li>
                             </ul>
-                            <button class="package-header__btn">Learn More</button>
+                            <a href="product.php?box=adventure" class="package-header__btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -100,6 +100,7 @@ include 'templates/nav.php';
                     </div>
                 </div>
                 </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="top-picks__card">
                     <img src="images/packages/puzzle.png" alt="puzzle" class="top-picks__card-img">
                     <div class="top-picks__card-inner">
@@ -108,6 +109,8 @@ include 'templates/nav.php';
                         <h4 class="top-picks__card-price"><span class="top-picks__card-amount"><sup>&euro;</sup>20.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="top-picks__card">
                     <img src="images/packages/vr.png" alt="vr" class="top-picks__card-img">
                     <div class="top-picks__card-inner">
@@ -116,6 +119,7 @@ include 'templates/nav.php';
                         <h4 class="top-picks__card-price"><span class="top-picks__card-amount"><sup>&euro;</sup>25.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -123,6 +127,7 @@ include 'templates/nav.php';
         <div class="more-packages__wrapper">
             <h2 class="more-packages__title">More Packages</h2>
             <div class="more-packages__cards-wrapper">
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/sport.png" alt="sports" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -131,6 +136,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>20.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/racing.png" alt="racing" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -139,6 +146,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>20.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/rpg.png" alt="RPG" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -147,6 +156,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>35.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/shooter.png" alt="shooter" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -155,6 +166,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>40.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/horror.png" alt="horror" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -163,6 +176,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>20.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/action.png" alt="action" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -171,6 +186,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>40.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/strategy.png" alt="strategy" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -179,6 +196,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>30.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/simulation.png" alt="simulation" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -187,6 +206,8 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>25.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
+                <a href="product.php?box=adventure" style="text-decoration: none; color: black;">
                 <div class="more-packages__card">
                     <img src="images/packages/idle.png" alt="idle" class="more-packages__card-img">
                     <div class="more-packages__card-inner">
@@ -195,6 +216,7 @@ include 'templates/nav.php';
                         <h4 class="more-packages__card-price"><span class="more-packages__card-amount"><sup>&euro;</sup>20.00</span>eur/month</h4>
                     </div>
                 </div>
+                </a>
             </div>
             <h2 class="more-packages__bottom-title">Looking for more?</h2>
             <button class="more-packages__bottom-button">Shop all packages</button>
@@ -203,3 +225,11 @@ include 'templates/nav.php';
 </main>
 <?php
 include 'templates/footer.php';
+if (!empty($_GET['cart'])) {
+    ?>
+    <script type="text/javascript">
+        cartModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    </script>
+    <?php
+}

@@ -21,8 +21,6 @@ registerBtn.addEventListener('click', ()=> {
     document.body.style.overflow = 'hidden';
 });
 cartBtn.addEventListener('click', ()=> {
-    console.log('click');
-    
     cartModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 });
@@ -41,4 +39,25 @@ document.body.addEventListener('click', (e) => {
         registerModal.style.display = 'none';
         loginModal.style.display = 'block';
     }
+})
+
+if (document.getElementById('add-to-cart-btn')) {
+    let addToCartBtn = document.getElementById('add-to-cart-btn');
+    addToCartBtn.addEventListener('click', ()=> {
+        window.location = 'home.php?cart=true';
+    });
+}
+
+if (document.querySelector('.forgot-pass__form-button')) {
+    let forgotBtn = document.querySelector('.forgot-pass__form-button');
+    let forgotInput = document.querySelector('.forgot-pass__form-input');
+    forgotBtn.addEventListener('click', () => {
+        forgotInput.style.borderColor = 'var(--clr-invalid-red)';
+    })
+}
+
+let footerBtn = document.querySelector('.footer__form-button');
+let footerInput = document.querySelector('.footer__form-input');
+footerBtn.addEventListener('click', () => {
+        footerInput.style.borderColor = 'var(--clr-invalid-red)';
 })
