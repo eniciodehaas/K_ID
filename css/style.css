@@ -2160,6 +2160,27 @@ textarea.login-modal__modal-input.textarea {
     .credit-details__bottom input {
         width: 100%;
     }
+
+    .profile__title {
+        grid-column: 1/2;
+    }
+
+    .profile__div {
+        grid-template-columns: 1fr;
+    }
+
+    .profile__field {
+        text-align: center;
+        font-size: var(--fnt-sz-s);
+    }
+
+    .profile__field:last-of-type {
+        grid-row: 3/4;
+    }
+
+    .subscriptions__title + div {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 480px) {

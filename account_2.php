@@ -5,7 +5,7 @@ include 'templates/nav.php';
     <h1 class="account__title">Manage account</h1>
     <div class="subscriptions">
         <div class="subscriptions__wrapper">
-            <h3 class="subscriptions__title">Your subscriptions<a href="home.php" class="how__back">Back to packages</a></h3>
+            <h3 class="subscriptions__title">Your subscriptions<a href="home.php" class="how__back">Back&nbsp;to&nbsp;packages</a></h3>
             <div style="display:flex; margin-top:40px">
             <a href="account_3.php" style="margin-right:80px; text-decoration: none; color:#000" >
             <div class="more-packages__card">
