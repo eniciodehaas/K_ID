@@ -9,11 +9,17 @@ let loginBtn = document.getElementById('login-btn');
 let loginModal = document.getElementById('login-modal');
 let registerBtn = document.getElementById('register-btn');
 let registerModal = document.getElementById('register-modal');
+let editBtn = document.getElementById('edit-btn');
+let editModal = document.getElementById('edit-modal');
 let cartBtn = document.getElementById('cart-btn');
 let cartModal = document.getElementById('shopping-cart-modal');
 let closeModal = document.querySelectorAll('.close-modal');
 loginBtn.addEventListener('click', ()=> {
     loginModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+});
+editBtn.addEventListener('click', ()=> {
+    editModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 });
 registerBtn.addEventListener('click', ()=> {
@@ -28,6 +34,7 @@ for (let i = 0; i < closeModal.length; i++) {
     closeModal[i].addEventListener('click', ()=> {
         loginModal.style.display = 'none';
         registerModal.style.display = 'none';
+        editModal.style.display = 'none';
         cartModal.style.display = 'none';
         document.body.style.overflow = 'auto';
     }) 

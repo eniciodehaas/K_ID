@@ -22,6 +22,17 @@
         <p class="register-modal__bottom-text">Already have an account? <a href="#" class="register-modal__sign-in">Sign in</a></p>
     </div>
 </div>
+<div class="login-modal" id="edit-modal">
+    <div class="login-modal__background close-modal"></div>
+    <div class="login-modal__modal">
+        <img src="images/GameWave-Logo.jpg" alt="logo" class="login-modal__modal-logo">
+        <p class="login-modal__modal-text">Edit your profile</p>
+        <input type="email" class="login-modal__modal-input" placeholder="Email Adress" value="johndoe@gmail.com">
+        <input type="text" class="login-modal__modal-input" placeholder="First name" value="John">
+        <input type="text" class="login-modal__modal-input" placeholder="Last name" value="Doe">
+        <button type="submit" class="login-modal__modal-button">Update</button>
+    </div>
+</div>
 <div class="shopping-cart-modal" id="shopping-cart-modal">
     <div class="shopping-cart-modal__background close-modal"></div>
     <div class="shopping-cart-modal__modal">
